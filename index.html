@@ -4,59 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my profile</title>
+    <title>My profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <span class="header">Subha Hens</span>
-        <div class="menu-option">
-            <span>Skills</span>
-            <span>Project</span>
-            <span>Contact</span>
-        </div>
-    </nav>
-    <div class="front-page">
-        <div class="iconic-text">
-            <p>I am Subha</p>
-            <p>And I Know <span>HTML</span></p>
-        </div>
-        <div class="your-pic">
-            <div class="ball"></div>
-        </div>
-    </div>
-    <div class="skill-page">
-        <div class="head-skill">
-            <span class="write-content">skill</span>
-            <hr>
-        </div>
-        <div class="container-skill">
-            <article>
-                <fieldset>
-                    <legend>MY SKILLS</legend>
-                    <P> <strong>i know html5 , css , javascript , and c programming</strong></P>
-                </fieldset>
-            </article>
-            <div class="container-img">
-                <img src="assesets/icons8-html-5-48.png" alt="" srcset="">
-                <img src="assesets/icons8-css3-48.png" alt="" srcset="">
-                <img src="assesets/icons8-javascript-48.png" srcset="">
+    <main>
+        <section id="front-page">
+            <nav>
+                <span>home</span>
+                <span>about me</span>
+                <span>project</span>
+                <span>contact me</span>
+            </nav>
+        <!---mobile nav bar--->
+            <div class="mobile_nav">
+                <div onclick="openNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="project-page">
-        <h1>My Project</h1>
-        <hr>
-        <div class="container-project">
-            <div class="container-project-img">
-                <img loading="lazy" src="./assesets/project.webp" alt="">
+            <div class="slide-nav-bar">
+                <span>home</span>
+                <span>about me</span>
+                <span>project</span>
+                <span>contact me</span>
             </div>
-            <h2>project 1:title</h2>
-        </div>
-    </div>
-
-
+        <!--mobile nav bar ended-->
+            <div class="dynamic-page">
+                <h2>Hi i am subha and
+                    i know webdevlopment</h2>
+                <img loading="lazy" src="assesets/photo.jpeg" loading="lazy" alt="photo">
+            </div>
+        </section>
+        <section id="about">
+            <h1><u>About Me</u></h1>
+            <span>I am Subha Hens, currently pursuing a B.Tech in
+                Computer Science and Engineering at Cooch Behar Government
+                Engineering College. I'm passionate about technology and
+                eager to build my skills in software development, cloud
+                computing, and emerging technologies.</span>
+            <div class="skill-container">
+                <h2><u>skills</u></h2> 
+                <div class="skill-img-container">
+                    <div class="skill-img">
+                        <img src="assesets/icons8-html-5-48.png" loading="lazy" alt="">
+                        <caption>HTML</caption>
+                    </div>
+                    <div class="skill-img">
+                        <img src="assesets/icons8-css3-48.png" loading="lazy" alt="">
+                        <caption>CSS</caption>
+                    </div>
+                    <div class="skill-img">
+                        <img src="assesets/icons8-javascript-48.png" loading="lazy" alt="">
+                        <caption>JAVASCRIPT</caption>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project">
+            <h1><u>My Project</u></h1>
+            <div class="project-container">
+                <div class="main-project p-1">
+                    <img src="assesets/photo.jpeg" loading="lazy" alt="project-1">
+                    <h2>project-1</h2>
+                    <h2>using language : <span>html,css,js</span></h2>
+                </div>
+                <div class="main-project">
+                    <img src="assesets/photo.jpeg" loading="lazy" alt="project-1">
+                    <h2>project-2</h2>
+                    <h2>using language : <span>html,css,js</span></h2>
+                </div>
+                <div class="main-project ">
+                    <img src="assesets/photo.jpeg" loading="lazy" alt="project-1">
+                    <h2>project-3</h2>
+                    <h2>using language : <span>html,css,js</span></h2>
+                </div>
+                <div class="main-project p-l">
+                    <img src="assesets/photo.jpeg" loading="lazy" alt="project-1">
+                    <h2>project-3</h2>
+                    <h2>using language : <span>html,css,js</span></h2>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2><u>My Contact</u></h2>
+            <div class="contact-container">
+                <div class="social-midia-container">
+                    <a href="#"><img src="assesets/linkedinlogo.png" loading="lazy" alt="face book"></a>
+                    <a href="#"><img src="assesets/linkedinlogo.png" loading="lazy" alt="face book"></a>
+                    <a href="#"><img src="assesets/linkedinlogo.png" loading="lazy" alt="face book"></a>
+                    <a href="#"><img src="assesets/linkedinlogo.png" loading="lazy" alt="face book"></a>
+                </div>
+                <div class="email-container">
+                    <h2>E-mail me</h2>
+                    <input type="email" name="" id="" placeholder="email@gmail.com">
+                    <input type="text" name="" id="" placeholder="Full Name">
+                    <input type="text" placeholder="your querreis">
+                    <input type="submit" value="SEND">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        All Coptrights Reserved To subha hens
+    </footer>
 </body>
 
 </html>
