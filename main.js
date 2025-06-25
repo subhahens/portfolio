@@ -12,3 +12,4 @@ function openNav() {
     console.log(n);
     
 }
+
