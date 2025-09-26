@@ -9,7 +9,21 @@ function openNav() {
         //return close menu
         document.getElementById("open_mobile_menu").style.display = "none";
     }
-    console.log(n);
     
 }
+function startAnima() {
+    const Body = document.querySelector('body');
+    const DIV = document.createElement('div');
+    const span = document.createElement('span');
+    DIV.appendChild(span);
+    DIV.className = '.start-animation';
+    Body.append(DIV);
+    
+}
+document.addEventListener('DOMContentLoaded',()=>{
+    
+    document.querySelector('#openNav').onclick = () => {
+        openNav();
+    }
+})
 

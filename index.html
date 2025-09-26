@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile</title>
+    <link rel="icon" href="assesets/logo.jpg">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
     <main>
         <section id="front-page">
+            
             <nav>
-                <span>home</span>
-                <span>about me</span>
-                <span>project</span>
-                <span>contact me</span>
+                <img src="assesets/logo.jpg" alt="logo" id="logo" srcset="">
+                <div class="nav-option">
+                    <span>home</span>
+                    <span>about me</span>
+                    <span>project</span>
+                    <span>contact me</span>
+                </div>
             </nav>
         <!---mobile nav bar--->
             <div class="mobile_nav">
-                <div onclick="openNav()">
+                <div id="openNav">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -33,13 +39,13 @@
             </div>
         <!--mobile nav bar ended-->
             <div class="dynamic-page">
-                <h2>Hi i am subha and
-                    i know webdevlopment</h2>
-                <img loading="lazy" src="assesets/photo.jpeg" loading="lazy" alt="photo">
+                <h2>Hi i am subha and <br> i know <span>frontend developer</span></h2>
+                <img loading="lazy" src="assesets/profile.jpg" loading="lazy" alt="photo">
             </div>
         </section>
         <section id="about">
-            <h1><u>About Me</u></h1>
+            <h1>About Me</h1>
+            <img class="heading-about" src="./assesets/bansi-removebg-preview.png" alt="">
             <span>I am Subha Hens, currently pursuing a B.Tech in
                 Computer Science and Engineering at Cooch Behar Government
                 Engineering College. I'm passionate about technology and
@@ -49,53 +55,63 @@
                 <h2><u>skills</u></h2> 
                 <div class="skill-img-container">
                     <div class="skill-img">
-                        <img src="assesets/icons8-html-5-48.png" loading="lazy" alt="">
+                        <img src="assesets/html.png" loading="lazy" alt="">
                         <caption>HTML</caption>
                     </div>
                     <div class="skill-img">
-                        <img src="assesets/icons8-css3-48.png" loading="lazy" alt="">
+                        <img src="assesets/css.png" loading="lazy" alt="">
                         <caption>CSS</caption>
                     </div>
                     <div class="skill-img">
-                        <img src="assesets/icons8-javascript-48.png" loading="lazy" alt="">
+                        <img src="assesets/js.png" loading="lazy" alt="">
                         <caption>JAVASCRIPT</caption>
+                    </div>
+                    <div class="skill-img">
+                        <img src="assesets/c.png" loading="lazy" alt="">
+                        <caption>C LANGUAGE</caption>
+                    </div>
+                    <div class="skill-img">
+                        <img src="assesets/cpp.png" loading="lazy" alt="">
+                        <caption>C++</caption>
                     </div>
                 </div>
             </div>
         </section>
         <section id="project">
-            <h1><u>My Project</u></h1>
+            <h1>My Project</h1>
+            <img class="heading-about" src="./assesets/bansi-removebg-preview.png" alt="">
             <div class="project-container">
                 <div class="main-project p-1">
-                    <img src="assesets/photo.jpeg" loading="lazy" alt="project-1">
+                    <img src="assesets/project.webp" loading="lazy" alt="project-1">
                     <h2>project-1</h2>
                     <h2>using language : <span>html,css,js</span></h2>
                 </div>
                 <div class="main-project">
-                    <img src="assesets/photo.jpeg" loading="lazy" alt="project-1">
+                    <img src="assesets/project.webp" loading="lazy" alt="project-1">
                     <h2>project-2</h2>
                     <h2>using language : <span>html,css,js</span></h2>
                 </div>
                 <div class="main-project ">
-                    <img src="assesets/photo.jpeg" loading="lazy" alt="project-1">
+                    <img src="assesets/project.webp" loading="lazy" alt="project-1">
                     <h2>project-3</h2>
                     <h2>using language : <span>html,css,js</span></h2>
                 </div>
                 <div class="main-project p-l">
-                    <img src="assesets/photo.jpeg" loading="lazy" alt="project-1">
+                    <img src="assesets/project.webp" loading="lazy" alt="project-1">
                     <h2>project-3</h2>
                     <h2>using language : <span>html,css,js</span></h2>
                 </div>
             </div>
         </section>
         <section id="contact">
-            <h2><u>My Contact</u></h2>
+            <h1>Contact Me</h1>
+            <img class="heading-about" src="./assesets/bansi-removebg-preview.png" alt="">
             <div class="contact-container">
                 <div class="social-midia-container">
-                    <a href="#"><img src="assesets/linkedinlogo.png" loading="lazy" alt="face book"></a>
-                    <a href="#"><img src="assesets/linkedinlogo.png" loading="lazy" alt="face book"></a>
-                    <a href="#"><img src="assesets/linkedinlogo.png" loading="lazy" alt="face book"></a>
-                    <a href="#"><img src="assesets/linkedinlogo.png" loading="lazy" alt="face book"></a>
+                    <a href="www.linkedin.com/in/subha-hens-331294322"><img src="assesets/linkedinlogo.png" loading="lazy" alt="face book"></a>
+                    <a href="https://github.com/subhahens"><img src="assesets/GitHublogo.png" loading="lazy" alt="face book"></a>
+                    <a href="https://leetcode.com/u/subhahens/"><img src="assesets/leetcodelogo.png" loading="lazy" alt="face book"></a>
+                    <a href="https://www.codechef.com/users/subhahens"><img src="assesets/codecheflogo.png" loading="lazy" alt="face book"></a>
                 </div>
                 <div class="email-container">
                     <h2>E-mail me</h2>
@@ -108,9 +124,9 @@
         </section>
     </main>
     <footer>
-        All Coptrights Reserved To subha hens
+        All Coptrights Reserved. this website developed with ❤️ by subha
     </footer>
-    <script src="main.js"></script>
+    
 </body>
 
 </html>
